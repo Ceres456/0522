@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnEvent(){
+            var btnChange = document.getElementById("btnChange");
+            var btnOrigin = document.getElementById("btnOrigin");
+
+            btnChange.onclick = changeBG;
+            btnOrigin.onclick = chageOrigin;
+        }
+
+        function changeBG(){
+            document.body.style.background = "yellow";
+        }
+        function chageOrigin(){
+            document.body.style.background = "white";
+        }
+    </script>
+</head>
+<body onload="btnEvent()">
+    <button id="btnChange" onclick="">배경색 변경</button>
+    <button id="btnOrigin" onclick="">배경색 복구</button>
+</body>
+</html>
